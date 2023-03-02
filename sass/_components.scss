@@ -1,0 +1,29 @@
+.author {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 1.5rem;
+  justify-self: end;
+  translate: 0 -5rem;
+  opacity: 0;
+  transition: all 1s;
+
+  background: linear-gradient(
+    to right,
+    var(--color-green--2),
+    var(--color-green--1)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  a:link,
+  a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    rotate: 90deg;
+  }
+}

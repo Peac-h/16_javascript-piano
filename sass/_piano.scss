@@ -1,0 +1,134 @@
+.layer--1 {
+  width: 75rem;
+  height: 40rem;
+  background: var(--bg-layer-1);
+  border-radius: 1.5rem;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @media only screen and (max-width: $bp-medium) {
+    rotate: 90deg;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    width: 65rem;
+    height: 30rem;
+  }
+
+  &:hover ~ .author {
+    translate: 0;
+    opacity: 1;
+
+    @media only screen and (max-width: $bp-medium) {
+      translate: 2rem 0;
+    }
+  }
+
+  .layer--2 {
+    width: 73rem;
+    height: 38rem;
+    background: var(--bg-layer-2);
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 63rem;
+      height: 28rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -1.5rem 11.5rem;
+      border-top: 1rem solid var(--color-green--1);
+      border-bottom: 1rem solid var(--color-green--2);
+      z-index: -1;
+      transform: skewY(15deg);
+      transition: 0.5s ease-in-out;
+    }
+    &:hover::before {
+      transform: skewY(0deg);
+      inset: -2.5rem 11.5rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 3.5rem -1.5rem;
+      border-left: 1rem solid var(--color-red);
+      border-right: 1rem solid var(--color-text);
+      z-index: -1;
+      transform: skew(15deg);
+      transition: 0.5s ease-in-out;
+    }
+    &:hover::after {
+      transform: skew(0deg);
+      inset: 3.5rem -2.5rem;
+    }
+
+    .piano-keyboard {
+      display: flex;
+      gap: 0.1rem;
+      clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+
+      &:hover .key .note {
+        opacity: 1;
+        translate: 0;
+      }
+
+      .key {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
+      .white {
+        width: 7rem;
+        height: 30rem;
+        background: var(--bg-main);
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: bold;
+        @media only screen and (max-width: $bp-smallest) {
+          width: 5rem;
+          height: 28rem;
+        }
+      }
+      .black {
+        width: 4rem;
+        height: 17rem;
+        background: #000;
+        margin-left: -2rem;
+        margin-right: -2rem;
+        z-index: 1;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        @media only screen and (max-width: $bp-smallest) {
+          width: 4rem;
+          height: 15rem;
+        }
+      }
+      .white .note {
+        opacity: 0;
+        translate: 0 -1.5rem;
+        transition: all 1s;
+      }
+      .black .note {
+        opacity: 0;
+        translate: 0 1.5rem;
+        transition: all 1s;
+      }
+      .active--black {
+        background: #333;
+      }
+      .active--white {
+        background: #fff;
+      }
+    }
+  }
+}

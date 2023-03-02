@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Javascript piano, coded by the Peach." />
+    <meta name="keywords" content="HTML, CSS, Sass, Javascript, Coding" />
+    <meta name="author" content="the Peach" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="fav/site.webmanifest" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+
+    <title>Javascript Piano</title>
+  </head>
+
+  <body>
+    <div class="layer--1">
+      <div class="layer--2">
+        <main class="piano-keyboard">
+          <div data-note="do" class="key white"><p class="note">a</p></div>
+          <div data-note="Db" class="key black"><p class="note">w</p></div>
+          <div data-note="re" class="key white"><p class="note">s</p></div>
+          <div data-note="Eb" class="key black"><p class="note">e</p></div>
+          <div data-note="mi" class="key white"><p class="note">d</p></div>
+          <div data-note="fa" class="key white"><p class="note">f</p></div>
+          <div data-note="Gb" class="key black"><p class="note">t</p></div>
+          <div data-note="sol" class="key white"><p class="note">g</p></div>
+          <div data-note="Ab" class="key black"><p class="note">y</p></div>
+          <div data-note="la" class="key white"><p class="note">h</p></div>
+          <div data-note="Bb" class="key black"><p class="note">u</p></div>
+          <div data-note="si" class="key white"><p class="note">j</p></div>
+        </main>
+      </div>
+    </div>
+    <aside>
+      <audio id="do" src="notes/do-stretched.wav"></audio>
+      <audio id="Db" src="notes/Db.mp3"></audio>
+      <audio id="re" src="notes/re-stretched.wav"></audio>
+      <audio id="Eb" src="notes/Eb.mp3"></audio>
+      <audio id="mi" src="notes/mi-stretched.wav"></audio>
+      <audio id="fa" src="notes/fa-stretched.wav"></audio>
+      <audio id="Gb" src="notes/Gb.mp3"></audio>
+      <audio id="sol" src="notes/sol-stretched.wav"></audio>
+      <audio id="Ab" src="notes/Ab.mp3"></audio>
+      <audio id="la" src="notes/la-stretched.wav"></audio>
+      <audio id="Bb" src="notes/Bb.mp3"></audio>
+      <audio id="si" src="notes/si-stretched.wav"></audio>
+    </aside>
+    <footer class="author">
+      Coded with love, by <a href="https://github.com/Peac-h">the Peach</a>
+    </footer>
+  </body>
+</html>

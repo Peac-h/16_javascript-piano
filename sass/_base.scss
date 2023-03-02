@@ -1,0 +1,44 @@
+:root {
+  --bg-main: #e8e8e8;
+  --bg-layer-1: linear-gradient(to left, #9b2226, #95d5b2, #f26419);
+  --bg-layer-2: #222;
+  --color-green--1: #40916c;
+  --color-green--2: #74c69d;
+  --color-red: #9b2226;
+  --color-text: #f26419;
+}
+
+// breakpoints
+$bp-medium: 56.25em; ///////////// 900px
+$bp-small: 34em; ///////////// 544px
+$bp-smallest: 22em; ///////////// 352px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 40%;
+  }
+}
+
+body {
+  height: 100vh;
+  background: var(--bg-main);
+
+  font-family: "Moon Dance", cursive;
+  font-size: 4rem;
+  color: var(--color-text);
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
