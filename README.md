@@ -10,7 +10,7 @@ Responsive for all screen sizes.
 
 ## Checkout the live demo
 
-[Javascript Piano]()
+[Javascript Piano](https://peac-h.github.io/16_javascript-piano/)
 
 ## Built with
 
