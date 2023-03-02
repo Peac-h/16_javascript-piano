@@ -2,7 +2,7 @@
 
 Javascript piano you can play on both by keyboard keys or the piano keys.
 
-Hover on piano keyboard to see the "cheetsheet" of keyboard.
+Hover on piano keyboard to see the "cheatsheet" of keyboard.
 
 Responsive for all screen sizes.
 
