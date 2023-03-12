@@ -12,6 +12,10 @@ Responsive for all screen sizes.
 
 [Javascript Piano](https://peac-h.github.io/16_javascript-piano/)
 
+![Javascript Piano](https://raw.githubusercontent.com/Peac-h/16_javascript-piano/main/Screenshot.png)
+
+![Javascript Piano Hovered version](https://raw.githubusercontent.com/Peac-h/16_javascript-piano/main/Screenshot%20hover.png)
+
 ## Built with
 
 - html
